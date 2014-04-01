@@ -22,6 +22,9 @@
 		C9237E3718E3239700C75587 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9237E1B18E3239700C75587 /* CoreData.framework */; };
 		C9237E3F18E3239700C75587 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9237E3D18E3239700C75587 /* InfoPlist.strings */; };
 		C9237E4118E3239700C75587 /* PhotoBombersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9237E4018E3239700C75587 /* PhotoBombersTests.m */; };
+		C9237E4C18E3242600C75587 /* PhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9237E4B18E3242600C75587 /* PhotosViewController.m */; };
+		C9237E4F18E4AC3100C75587 /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9237E4E18E4AC3100C75587 /* PhotoCell.m */; };
+		C9237E5118E4ADCF00C75587 /* st vincent.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9237E5018E4ADCF00C75587 /* st vincent.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,12 @@
 		C9237E3C18E3239700C75587 /* PhotoBombersTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhotoBombersTests-Info.plist"; sourceTree = "<group>"; };
 		C9237E3E18E3239700C75587 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C9237E4018E3239700C75587 /* PhotoBombersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoBombersTests.m; sourceTree = "<group>"; };
+		C9237E4A18E3242600C75587 /* PhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosViewController.h; sourceTree = "<group>"; };
+		C9237E4B18E3242600C75587 /* PhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosViewController.m; sourceTree = "<group>"; };
+		C9237E4D18E4AC3100C75587 /* PhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCell.h; sourceTree = "<group>"; };
+		C9237E4E18E4AC3100C75587 /* PhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCell.m; sourceTree = "<group>"; };
+		C9237E5018E4ADCF00C75587 /* st vincent.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "st vincent.jpg"; sourceTree = "<group>"; };
+		C9237E5218EB177800C75587 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +93,7 @@
 		C9237E0918E3239600C75587 = {
 			isa = PBXGroup;
 			children = (
+				C9237E5218EB177800C75587 /* Podfile */,
 				C9237E1D18E3239700C75587 /* PhotoBombers */,
 				C9237E3A18E3239700C75587 /* PhotoBombersTests */,
 				C9237E1418E3239700C75587 /* Frameworks */,
@@ -117,6 +127,10 @@
 			children = (
 				C9237E2618E3239700C75587 /* AppDelegate.h */,
 				C9237E2718E3239700C75587 /* AppDelegate.m */,
+				C9237E4A18E3242600C75587 /* PhotosViewController.h */,
+				C9237E4B18E3242600C75587 /* PhotosViewController.m */,
+				C9237E4D18E4AC3100C75587 /* PhotoCell.h */,
+				C9237E4E18E4AC3100C75587 /* PhotoCell.m */,
 				C9237E2C18E3239700C75587 /* Images.xcassets */,
 				C9237E2918E3239700C75587 /* PhotoBombers.xcdatamodeld */,
 				C9237E1E18E3239700C75587 /* Supporting Files */,
@@ -127,6 +141,7 @@
 		C9237E1E18E3239700C75587 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C9237E5018E4ADCF00C75587 /* st vincent.jpg */,
 				C9237E1F18E3239700C75587 /* PhotoBombers-Info.plist */,
 				C9237E2018E3239700C75587 /* InfoPlist.strings */,
 				C9237E2318E3239700C75587 /* main.m */,
@@ -230,6 +245,7 @@
 			files = (
 				C9237E2218E3239700C75587 /* InfoPlist.strings in Resources */,
 				C9237E2D18E3239700C75587 /* Images.xcassets in Resources */,
+				C9237E5118E4ADCF00C75587 /* st vincent.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +265,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9237E2818E3239700C75587 /* AppDelegate.m in Sources */,
+				C9237E4F18E4AC3100C75587 /* PhotoCell.m in Sources */,
+				C9237E4C18E3242600C75587 /* PhotosViewController.m in Sources */,
 				C9237E2418E3239700C75587 /* main.m in Sources */,
 				C9237E2B18E3239700C75587 /* PhotoBombers.xcdatamodeld in Sources */,
 			);
