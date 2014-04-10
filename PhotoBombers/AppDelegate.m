@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "PhotosViewController.h"
+#import <SimpleAuth/SimpleAuth.h>
 
 @implementation AppDelegate
 
@@ -17,6 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    SimpleAuth.configuration[@"instagram"] = @{
+                                               @"client_id" : @"9667bacd115b4525bce06774f6e82934",
+                                               SimpleAuthRedirectURIKey : @"photobombers://auth/instagram"
+                                               };
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     PhotosViewController *photosViewController = [[PhotosViewController alloc]init];
     UINavigationController *navigationController = [[UINavigationController alloc]initWithRootViewController:photosViewController];

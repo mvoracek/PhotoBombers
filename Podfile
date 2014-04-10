@@ -1,1 +1,2 @@
-Pod 'SimpleAuth/Instagram'
+pod 'SimpleAuth/Instagram'
+pod 'SAMCache'
